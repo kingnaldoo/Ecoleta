@@ -1,0 +1,99 @@
+@media(min-width: 500px){
+    #page-home{
+        height: 100vh;
+    }
+}
+
+@media(min-width: 650px){
+    #page-home{
+        height: 150vh;
+    }
+}
+
+@media(min-width: 950px){
+    #page-home{
+        height: 200vh;
+    }
+}
+
+@media(min-width: 1020px){
+    #background-image{
+        display: block;
+        position: fixed;
+        left: 35vw;
+        top: 30vh;
+        z-index: -1;
+        width: 70vw;
+        
+    }
+
+    #page-home{
+        padding: 6vw;
+        display: block;
+        height: 50vh;
+    }
+
+    #page-home header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #page-home header .log-in{
+        display: flex;
+    }
+
+    #page-home header img#logo{
+        width: 20vw;
+        margin: 0;
+    }
+    #page-home header div img{
+        margin-right: 5px;
+    }
+
+    #page-home header h3{
+    margin: auto 0;
+    font-size: 2vw;
+    font-weight: 300;
+    }
+
+    #page-home section{
+        
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #page-home section main{
+        width: 50vw;
+    }
+
+    #page-home section main h1{
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    #page-home section main h3{
+        width: 35vw;
+        font-size: 2vw;
+        margin-bottom: 1.5vw;
+    }
+
+    #page-home section main button{
+        width: 70%;
+        border-radius: 1vw;
+    }
+
+    #page-home section main button img{
+        width: 3vw;
+        padding: 1.5vw;
+        border-radius: 1vw 0 0 1vw;
+    }
+
+    #page-home section main button h4{
+        font-size: 1.6vw;
+    }
+    #page-home footer{
+        display: none;
+    }
+}

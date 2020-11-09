@@ -1,0 +1,96 @@
+
+body{
+    background-color: var(--background-color);
+}
+
+#background-image{
+    display: none;
+}
+
+#page-home{
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+#page-home header .log-in{
+    display: none;
+}
+
+#page-home header img#logo{
+    display: block;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+#page-home header .log-in h3 a{
+    transition: color 300ms;
+}
+
+#page-home header .log-in h3 a:hover{
+    color: var(--dark-green);
+    transition: color 300ms;
+}
+
+#page-home section main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-home section main h1{
+    font-size: 9.5vw;
+    margin-bottom: 5vw;
+}
+
+#page-home section main h3{
+    width: 90%;
+    font-size: 4vw;
+    font-weight: 300;
+    margin-bottom: 5vw;
+}
+
+#page-home section main button{
+    display: flex;
+    background-color: var(--light-green);
+    border-radius: 2vw;
+    transition: background-color 300ms;
+}
+
+#page-home section main button:hover{
+    background-color: var(--focus-green);
+    outline: none;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+#page-home section main button img{
+    background-color: var(--dark-green);
+    width: 5vw;
+    padding: 4vw;
+    border-radius: 2vw 0 0 2vw;
+}
+
+#page-home section main button h4{
+    margin: auto auto;
+    color: white;
+    font-size: 4vw;
+}
+
+#page-home footer{
+    display: flex;
+    margin: 0 auto;
+}
+
+#page-home footer img{
+    margin-right: 5px;
+}
+
+#page-home footer h3{
+    font-size: 4vw;
+    margin: auto 0;
+    font-size: 3vw;
+    font-weight: 300;
+}

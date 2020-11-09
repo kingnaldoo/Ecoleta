@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #F0F0F5;
+    --title-color: #322155;
+    --dark-green: #2FB86E;
+    --light-green: #34CB79;
+    --focus-green: #0AF071;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: normal;
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
