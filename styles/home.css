@@ -102,3 +102,75 @@ body{
     font-size: 3vw;
     font-weight: 300;
 }
+
+#search {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+#search #content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#content #top{
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+#content #top h1{
+    font-size: 8vw;
+    margin: auto;
+    color: white;
+}
+
+#content #top img{
+    margin-top: auto;
+    width: 4vw;
+}
+
+#content #search-bar{
+    display: flex;
+    box-sizing: border-box;
+}
+
+#content #search-bar input{
+    width: 100%;
+    height: 12vw;
+    border-radius: 1vw 0 0 1vw;
+    outline: none;
+    font-size: 6vw;
+    padding: 0 2vw;
+}
+
+#content #search-bar #img{
+    width: 12vw;
+    height: 12vw;
+    background-color: var(--dark-green);
+    border-radius: 0 1vw 1vw 0;
+}
+
+#content #search-bar #img:hover{
+    cursor: pointer;
+    background-color: var(--light-green);
+}
+
+#content #search-bar #img:active {
+    background-color: var(--focus-green);
+}
+
+#img img{
+    position: relative;
+    width: 6vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
