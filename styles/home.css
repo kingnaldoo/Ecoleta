@@ -1,4 +1,3 @@
-
 body{
     background-color: var(--background-color);
 }
@@ -25,13 +24,17 @@ body{
     margin: 0 auto;
 }
 
-#page-home header .log-in h3 a{
+#page-home header .log-in h3{
     transition: color 300ms;
 }
 
-#page-home header .log-in h3 a:hover{
+#page-home header .log-in h3:hover{
     color: var(--dark-green);
     transition: color 300ms;
+}
+
+#page-home header .log-in h3:active{
+    color: var(--focus-green);
 }
 
 #page-home section main {
@@ -84,8 +87,13 @@ body{
     margin: 0 auto;
 }
 
+#page-home footer a{
+    display: flex;
+}
+
 #page-home footer img{
     margin-right: 5px;
+    width: 5vw;
 }
 
 #page-home footer h3{

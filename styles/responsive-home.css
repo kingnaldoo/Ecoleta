@@ -46,8 +46,10 @@
         width: 20vw;
         margin: 0;
     }
-    #page-home header div img{
+    
+    #page-home header a img{
         margin-right: 5px;
+        width: 3vw;
     }
 
     #page-home header h3{

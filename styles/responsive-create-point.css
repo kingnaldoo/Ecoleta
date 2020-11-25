@@ -1,0 +1,108 @@
+@media(min-width: 760px){
+    #page-create-point{
+        padding: 6vw;
+        display: block;
+    }
+
+    #page-create-point header {
+        margin-bottom: 5vw;
+    }
+
+    #page-create-point header .log-in{
+        display: flex;
+    }
+
+    #page-create-point header img#logo{
+        width: 20vw;
+        margin: 0;
+    }
+
+    #page-create-point header .log-in img{
+        margin-right: 5px;
+        width: 3vw;
+    }
+    
+    #page-create-point header .log-in h3{
+        display: block;
+        margin: auto 0;
+        font-size: 2vw;
+        font-weight: 300;
+    }
+
+    #page-create-point form{
+        background-color: white;
+        padding: 5vw;
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    #page-create-point form h1{
+        width: 60%;
+        font-size: 4.5vw;
+        margin-bottom: 5vw;
+    }
+    
+    #page-create-point form h2{
+        font-size: 3vw;
+    }
+
+    form fieldset, label legend {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    label input, label select {
+        height: 6vw;
+        border-radius: 1vw;
+        font-size: 2vw;
+    }
+
+    #cep{
+        width: 40%;
+    }
+
+    #number{
+        width: 30%;
+    }
+
+    .field-group{
+        display: flex;
+        
+    }
+
+    .field-group fieldset + fieldset{
+        margin-left: 4vw;
+    }
+
+    fieldset[disabled] {
+        width: 100%;
+    }
+
+    #title p {
+        font-size: 2vw;
+    }
+
+    #items ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #items ul li {
+        height: 18vw;
+    }
+
+    li img {
+        width: 7vw;
+        margin-bottom: 1vw;
+    }
+
+    li p{
+        font-size: 2vw;
+    }
+
+    form button {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+
+}
