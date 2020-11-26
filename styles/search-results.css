@@ -1,0 +1,83 @@
+body, html{
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#background{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--background-color);
+}
+
+#page-search-results{
+    padding: 6vw;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vw;
+}
+
+header #logo{
+    width: 40vw;
+}
+
+.log-in{
+    display: flex;
+}
+
+.log-in img{
+    width: 10vw;
+}
+
+.log-in h3{
+    display: none;
+}
+
+section p{
+    font-size: 4vw;
+    margin-bottom: 4vw;
+}
+
+.locale{
+    margin-bottom: 10vw;
+}
+
+.locale img{
+    width: 100%;
+    border-radius: 4vw 4vw 0 0;
+    margin-bottom: 4vw;
+}
+
+.locale h3, .locale h4{
+    margin-bottom: 4vw;
+}
+
+.locale h3{
+    font-size: 8vw;
+}
+
+.locale h4{
+    width: 70%;
+    color: var(--focus-green);
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.locale h5{
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+@media(min-width: 760px) {
+    #background{
+        height: 50%;
+    }
+
+    #page-search-results{
+        padding: 6vw;
+        width: 100%;
+    }
+
+    #page-search-results header{
+        margin-bottom: 5vw;
+    }
+
+    header #logo{
+        width: 20vw;
+        margin: 0;
+    }
+
+    .log-in img{
+        margin-right: 5px;
+        width: 3vw;
+    }
+
+    .log-in h3{
+        display: block;
+        margin: auto 0;
+        font-size: 2vw;
+        font-weight: 300;
+    }
+
+    section p{
+        font-size: 1.5vw;
+        margin-bottom: 2vw;
+    }
+
+    #results{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3vw;
+    }
+
+    .locale img{
+        width: 100%;
+        height: 18vw;
+        border-radius: 2vw 2vw 0 0;
+        margin-bottom: 1.5vw;
+    }
+
+    .locale h3, .locale h4{
+        margin-bottom: 1.5vw;
+    }
+    
+    .locale h3{
+        font-size: 3vw;
+    }
+
+    .locale h4{
+        width: 70%;
+        font-size: 2vw;
+    }
+    
+    .locale h5{
+        font-size: 1vw;
+    }
+}
