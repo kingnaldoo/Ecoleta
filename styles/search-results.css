@@ -40,6 +40,15 @@ header #logo{
     display: none;
 }
 
+.log-in h3:hover{
+    color: var(--dark-green);
+    transition: color 300ms;
+}
+
+.log-in h3:active{
+    color: var(--focus-green);
+}
+
 section p{
     font-size: 4vw;
     margin-bottom: 4vw;

@@ -57,12 +57,13 @@
     display: flex;
     background-color: var(--light-green);
     border-radius: 2vw;
+    outline: none;
     transition: background-color 300ms;
 }
 
 #page-home section main button:hover{
     background-color: var(--focus-green);
-    outline: none;
+    
     cursor: pointer;
     transition: background-color 300ms;
 }
@@ -78,6 +79,7 @@
     margin: auto auto;
     color: white;
     font-size: 4vw;
+    pointer-events: none;
 }
 
 #page-home footer{
