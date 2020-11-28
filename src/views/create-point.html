@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="Pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar ponto de coleta</title>
+{% extends "layouts.html" %}
 
-    <link rel="stylesheet" href="styles/main.css">
+{% set title = "Cadastrar ponto de coleta" %}
+
+{% block styles %}
     <link rel="stylesheet" href="styles/create-point.css">
     <link rel="stylesheet" href="styles/responsive-create-point.css">
+{% endblock styles %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="page-create-point">
-        <header>
-            <img src="assets/logo.svg" alt="Ecoleta-logo" id="logo">
-            <a class="log-in" href="/index.html">
-                <img src="assets/log-in.svg" alt="Log-in" href="/index.html">
-                <h3>Voltar para a home</h3>
-            </a> 
-        </header>
+{% set page = "page-create-point" %}
 
-        <form action="" method="">
+{% set home = "Voltar para a home" %}
+
+{% set route = "/" %}
+
+{% block content %}
+    <form action="" method="">
             <h1>Cadastro do ponto de coleta</h1>
 
             <div id="contact">
@@ -142,8 +135,9 @@
             
             <button>Cadastrar ponto de coleta</button>
         </form>
-    </div>
-
+{% endblock content %}
+        
+{% block scripts %}
     <script src="scripts/create-point.js"></script>
-</body>
-</html>
+{% endblock scripts %}
+

@@ -1,60 +1,50 @@
-<!DOCTYPE html>
-<html lang="Pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de Pesquisa</title>
+{% extends "layouts.html" %}
 
-    <link rel="stylesheet" href="styles/main.css">
+{% set title = "Resultados de pesquisa" %}
+
+{% block styles %}
     <link rel="stylesheet" href="styles/search-results.css">
     <link rel="stylesheet" href="styles/responsive-search-results.css">
+{% endblock styles %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+{% block background %}
     <div id="background"></div>
+{% endblock background %}
 
-    <div id="page-search-results">
-        <header>
-            <img src="assets/logo.svg" alt="Ecoleta-logo" id="logo">
-            
-            <a class="log-in" href="/">
-                <img src="assets/log-in.svg" alt="Log-in">
-                <h3>Voltar para a home</h3>
-            </a> 
-        </header>
+{% set page = "page-search-results" %}
 
-        <section>
-            <p><b>2 pontos</b> encontrados</p>
+{% set home = "Voltar para a home" %}
 
-            <div id="results">
-                <div class="locale">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/23/15/49/bundle-1853667_640.jpg">
+{% set route = "/" %}
 
-                    <h3>Colectoria</h3>
+{% block content %}
+    <section>
+        <p><b>2 pontos</b> encontrados</p>
 
-                    <h4>Resíduos Eletrônicos, Lâmpadas</h4>
+        <div id="results">
+            <div class="locale">
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/15/49/bundle-1853667_640.jpg">
 
-                    <h5>Rio do Sul, Santa Catarina</h5>
-                    <h5>Guilherme Gembala, Jardim América</h5>
-                    <h5>N° 260</h5>
-                </div>
+                <h3>Colectoria</h3>
 
-                <div class="locale">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/29/10/02/pile-1868894_640.jpg">
+                <h4>Resíduos Eletrônicos, Lâmpadas</h4>
 
-                    <h3>Paperside</h3>
-
-                    <h4>Papéis e Papelão</h4>
-
-                    <h5>Rio do Sul, Santa Catarina</h5>
-                    <h5>Guilherme Gembala, Jardim América</h5>
-                    <h5>N° 260</h5>
-                </div>
+                <h5>Rio do Sul, Santa Catarina</h5>
+                <h5>Guilherme Gembala, Jardim América</h5>
+                <h5>N° 260</h5>
             </div>
-        </section>
-    <div>
-    
-    
-</body>
-</html>
+
+            <div class="locale">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/10/02/pile-1868894_640.jpg">
+
+                <h3>Paperside</h3>
+
+                <h4>Papéis e Papelão</h4>
+
+                <h5>Rio do Sul, Santa Catarina</h5>
+                <h5>Guilherme Gembala, Jardim América</h5>
+                <h5>N° 260</h5>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

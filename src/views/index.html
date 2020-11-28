@@ -1,47 +1,43 @@
-<!DOCTYPE html>
-<html lang="Pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoleta: O seu marketplace de coleta de resíduos</title>
+{% extends "layouts.html" %}
 
-    <link rel="stylesheet" href="styles/main.css">
+{% set title = "Ecoleta: O seu marketplace de coleta de resíduos" %}
+
+{% block styles %}
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/responsive-home.css">
+{% endblock styles %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img src="assets/home-background.svg" alt="Ilustração de fundo" id="background-image">
+{% set page = "page-home" %}
 
-    <div id="page-home">
-        <header>
-            <img src="assets/logo.svg" alt="Ecoleta-logo" id="logo">
-            <a class="log-in" href="/create-point.html">
-                <img src="assets/log-in.svg" alt="Log-in">
-                <h3>Cadastre um pontos de coleta</h3>
-            </a> 
-        </header>
+{% set home = "Cadastre um pontos de coleta" %}
 
-        <section>
-            <main>
-                <h1>Seu marketplace de coleta de resíduos</h1>
-                <h3>Ajudamos pessoas a encontrarem um ponto de coleta de forma eficiente.</h3>
-                <button>
-                    <img src="assets/search.svg" alt="Pesquisar">
-                    <h4>Pesquisar um local de coleta</h4>
-                </button>  
-            </main>
-        </section>
+{% set route = "/create-point" %}
 
-        <footer>
-            <a class="log-in" href="/create-point.html">
-                <img src="assets/log-in.svg" alt="Log-in">
-                <h3>Cadastre um pontos de coleta</h3>
-            </a> 
-        </footer>
-    </div>
+{% block background %}
+        <img src="assets/home-background.svg" alt="Ilustração de fundo" id="background-image">
+{% endblock background %}
 
+{% block content %}
+    <section>
+        <main>
+            <h1>Seu marketplace de coleta de resíduos</h1>
+            <h3>Ajudamos pessoas a encontrarem um ponto de coleta de forma eficiente.</h3>
+            <button>
+                <img src="assets/search.svg" alt="Pesquisar">
+                <h4>Pesquisar um local de coleta</h4>
+            </button>  
+        </main>
+    </section>
+
+    <footer>
+        <a class="log-in" href="/create-point.html">
+            <img src="assets/log-in.svg" alt="Log-in">
+            <h3>Cadastre um pontos de coleta</h3>
+        </a> 
+    </footer>
+{% endblock content %}
+
+{% block search %}
     <div id="search">
         <div id="content">
             <div id="top">
@@ -51,14 +47,15 @@
 
             <div id="search-bar">
                 <input type="text" placeholder="Digite aqui sua cidade">
-                <a id="img" href="/search-results.html">
+                <a id="img" href="/search-results">
                     <img src="assets/search.svg" alt="Pesquisar">
                 </a>
                 
             </div>
         </div>
     </div>
+{% endblock search %}
 
+{% block scripts %}
     <script src="scripts/home.js"></script>
-</body>
-</html>
+{% endblock scripts %}
