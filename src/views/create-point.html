@@ -14,7 +14,7 @@
 {% set route = "/" %}
 
 {% block content %}
-    <form action="" method="">
+    <form action="" method="POST">
             <h1>Cadastro do ponto de coleta</h1>
 
             <div id="contact">
@@ -24,7 +24,7 @@
                     <fieldset>
                         <label for="name">
                             <legend>Nome da entidade</legend>
-                            <input type="text" name="name">
+                            <input type="text" name="name" required>
                         </label>
                     </fieldset>
 
@@ -32,50 +32,58 @@
                         <fieldset id="cep">
                             <label for="cep">
                                 <legend>Cep</legend>
-                                <input type="number" name="cep">
+                                <input type="number" name="cep" required>
                             </label>
                         </fieldset>
 
                         <fieldset id="image">
                             <label for="imagem">
                                 <legend>Imagem</legend>
-                                <input type="text" name="imagem" placeholder="URL da Imagem">
+                                <input type="text" name="image" placeholder="URL da Imagem" required>
                             </label>
                         </fieldset>
                     </div>
+
+                    <input type="hidden" id="state-input" name="state">
 
                     <div class="field-group">
                         <fieldset disabled>
                             <label for="estado">
                                 <legend>Estado</legend>
-                                <select name="state" id="state">
-                                    <option value="">Estado</option>
+                                <select id="state">
+                                    <option>Estado</option>
                                 </select>
                             </label>
                         </fieldset>
 
+                        
+
                         <fieldset disabled>
                             <label for="cidade">
                                 <legend>Cidade</legend>
-                                <select name="city" id="city">
-                                    <option value="">Cidade</option>
+                                <select id="city">
+                                    <option>Cidade</option>
                                 </select>
                             </label>
                         </fieldset>
+
+                        
                     </div>
+
+                    <input type="hidden" id="city-input" name="city">
 
                     <div class="field-group">
                         <fieldset>
                             <label for="endereco">
                                 <legend>Endereço</legend>
-                                <input type="text" name="endereco">
+                                <input type="text" name="address" required>
                             </label>
                         </fieldset>
 
                         <fieldset id="number">
                             <label for="numero">
                                 <legend>Número</legend>
-                                <input type="number" name="numero">
+                                <input type="number" name="number" required>
                             </label>
                         </fieldset>
                     </div>
@@ -87,8 +95,8 @@
                     <h2>Itens de coleta</h2>
                     <p>Selecione um ou mais itens</p>
                 </div>
-
-                <ul value="">
+            <input type="hidden" id="input-items" name="items">
+                <ul>
                     <li>
                         <div>
                             <img src="assets/lampadas.svg" alt="Lâmpadas">

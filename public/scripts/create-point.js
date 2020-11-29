@@ -16,9 +16,11 @@ cep.addEventListener('keyup', () => {
                             return resp.json()
                         })
                     .then((dado2)=>{
-                        document.querySelector('#state').innerHTML = `<option value="${dado2.nome}">${dado2.nome}</option>`
+                        document.querySelector('#state').innerHTML = `<option>${dado2.nome}</option>`
+                        document.querySelector('#state-input').value = dado2.nome
         
-                        document.querySelector('#city').innerHTML = `<option value="${dado1.localidade}">${dado1.localidade}</option>`
+                        document.querySelector('#city').innerHTML = `<option>${dado1.localidade}</option>`
+                        document.querySelector('#city-input').value = dado1.localidade
                     })
                 })
             }
@@ -45,6 +47,6 @@ items.addEventListener('click', (event)=> {
         selectedItems.splice(selectedItems.indexOf(item), 1)
     }
 
-    document.querySelector('#items ul').setAttribute('value', `${selectedItems.join(', ')}`)
+    document.querySelector('#input-items').value = selectedItems.join(', ')
 
 })

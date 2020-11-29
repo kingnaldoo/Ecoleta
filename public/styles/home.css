@@ -151,7 +151,7 @@
 }
 
 #content #search-bar #img{
-    width: 12vw;
+    width: 15vw;
     height: 12vw;
     background-color: var(--dark-green);
     border-radius: 0 1vw 1vw 0;
@@ -166,11 +166,8 @@
     background-color: var(--focus-green);
 }
 
-#img img{
+button#img img{
     position: relative;
     width: 6vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     pointer-events: none;
 }

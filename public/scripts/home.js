@@ -7,7 +7,7 @@ document.querySelector('#content #top img').addEventListener('click',() => {
 })
 
 document.querySelector('#search-bar').addEventListener('keyup', (event) => {
-    if(event.key == 'Enter'){
-        window.location.href = "/search-results.html"
+    if(event.key == 'Enter' && document.querySelector('#search-bar input').value != ''){
+        window.location.href = "/search-results"
     }
 })
