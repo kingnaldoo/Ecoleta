@@ -3,7 +3,7 @@ const nunjucks = require('nunjucks')
 const app = express()
 const db = require("./database/db")
 
-//----configurações-----
+//----config-----
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}))
@@ -12,7 +12,7 @@ nunjucks.configure(__dirname+'/views', {
     express: app
 });
 
-//---------rotas------------
+//---------routes------------
 
 app.get('/', (req, res)=>{
     res.render('index.html')
@@ -77,5 +77,5 @@ app.get('/search-results', (req, res)=>{
 })
 
 app.listen(3000, () => {
-    console.log('O servidor está rodando😎')
+    console.log('The server is running😎')
 })
