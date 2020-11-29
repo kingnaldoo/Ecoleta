@@ -1,5 +1,6 @@
 const cep = document.querySelector('input[name=cep]')
 const items = document.querySelector('#items ul')
+const ok = document.querySelector('#ok')
 let selectedItems = []
 
 
@@ -28,10 +29,8 @@ cep.addEventListener('keyup', () => {
                 document.querySelector('#state').innerHTML = `<option value="">Estado não encontrado</option>`
         
                 document.querySelector('#city').innerHTML = `<option value="">Cidade não encontrada</option>`
-            }
-            
+            }  
         })
-        
     }
 })
 
@@ -46,7 +45,12 @@ items.addEventListener('click', (event)=> {
     else{
         selectedItems.splice(selectedItems.indexOf(item), 1)
     }
-
     document.querySelector('#input-items').value = selectedItems.join(', ')
+})
 
+ok.addEventListener('submit', () => {
+    setTimeout(() => {
+        ok.style.display = block
+        window.location = '/'
+    }), 2000
 })

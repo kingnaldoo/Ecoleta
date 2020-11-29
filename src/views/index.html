@@ -30,14 +30,14 @@
     </section>
 
     <footer>
-        <a class="log-in" href="/create-point.html">
+        <a class="log-in" href="/create-point">
             <img src="assets/log-in.svg" alt="Log-in">
             <h3>Cadastre um pontos de coleta</h3>
         </a> 
     </footer>
 {% endblock content %}
 
-{% block search %}
+{% block modal %}
     <form id="search" action="/search-results" method="GET">
         <div id="content">
             <div id="top">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </form>
-{% endblock search %}
+{% endblock modal %}
 
 {% block scripts %}
     <script src="scripts/home.js"></script>

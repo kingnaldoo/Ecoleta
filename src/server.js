@@ -1,16 +1,18 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 const app = express()
-
 const db = require("./database/db")
+
+//----configurações-----
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}))
-
 nunjucks.configure(__dirname+'/views', {
     autoescape: true, 
     express: app
 });
+
+//---------rotas------------
 
 app.get('/', (req, res)=>{
     res.render('index.html')
@@ -57,9 +59,7 @@ app.post('/create-point', (req, res)=> {
     res.send('ok')
 })
 
-
 app.get('/search-results', (req, res)=>{
-
     const search = req.query.search
 
     if(search == "") {
@@ -74,8 +74,6 @@ app.get('/search-results', (req, res)=>{
         const total = rows.length
         return res.render('search-results.html', { places: rows, total: total})
     })
-
-
 })
 
 app.listen(3000, () => {

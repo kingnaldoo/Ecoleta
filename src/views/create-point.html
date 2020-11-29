@@ -144,6 +144,15 @@
             <button>Cadastrar ponto de coleta</button>
         </form>
 {% endblock content %}
+
+{% block modal %}
+    <div id="ok">
+        <div>
+            <img src="assets/check.svg">
+            <h1>Cadastro Concluído!</h1>
+        </div>
+    </div>
+{% endblock modal %}
         
 {% block scripts %}
     <script src="scripts/create-point.js"></script>
